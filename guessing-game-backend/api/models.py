@@ -8,7 +8,6 @@ class Game(BaseModel):
     def random_number():
         return random.randint(1, 50)
 
-    # 1 <= number <= 100
     # PositiveSmallIntegerField can store 0 - 32767
     number = models.PositiveSmallIntegerField(default=random_number)
     question_limit = models.PositiveSmallIntegerField(default=5)
